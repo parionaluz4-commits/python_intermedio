@@ -1,23 +1,12 @@
-## USANDO WHILE CEAR UN PROGRAMA QUE ME DE UNA PREGUNTA para responder y que solo tenga 3 oportunidades para dar con la respuesta correcta
-respuesta_correcta = "Python"
-intentos = 0
-respuesta = ""
-continuar = "S"
+## 1. Mostrar los números del 0 al 5 con la función range
+for numero in range(6):
+    print(numero)
+print("------------------------------")
 
-while continuar == "S" and intentos < 3:
-    respuesta = input("¿Cuál es el lenguaje de programación que estamos utilizando? ")
-    intentos += 1
-
-    if respuesta == respuesta_correcta:
-        print("Respuesta correcta")
-        continuar = "N"
-    else:
-        print("Respuesta incorrecta")
-
-        if intentos < 3:
-            continuar = input("¿Desea intentar nuevamente? (S/N): ")
-        else:
-            continuar = "N"
-
-print("Programa terminado")
-
+## 2. Mostrar los números del 2 al 6
+for numero in range(2, 7):
+    print(numero)
+print("------------------------------")
+## 3. mostrar los numeros pares que existen entre 1 y 10 
+for pares in range(2,11,2):
+    print(pares)    
